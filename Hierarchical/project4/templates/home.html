@@ -1,0 +1,27 @@
+<html>
+	<head> 
+		<title>Ml Project</title>
+		<link  rel="stylesheet"    href="{{ url_for('static', filename='style.css')  }}">	
+
+	</head>
+
+
+
+<form action="/pred" method="post"> 
+    <input type="text" name="v1" id="Genre"  placeholder="Genre" > <br> <br>
+
+    <input type="text" name="v2" id="Age"  placeholder="Age" > <br> <br>
+
+    <input type="text" name="v3" id="Annual Income (k$) " placeholder="Annual Income (k$) " > <br> <br>
+
+    <input type="text" name="v4" id="Spending Score (1-100)"  placeholder="Spending Score (1-100)" > <br> <br>
+
+    
+    <button type="submit">Make Prediction</button>
+
+
+
+</form>
+
+<h1>The sales is : {{sales}} </h1>
+</html> 
